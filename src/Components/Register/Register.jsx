@@ -77,7 +77,7 @@ export default function Register() {
       .post(`https://route-posts.routemisr.com/users/signup`, obj)
       .then((res) => {
         if (res.data.message === "account created") {
-          navigate("/login");        
+          navigate("/login");
         }
       })
       .catch((err) => {
@@ -90,6 +90,9 @@ export default function Register() {
 
   return (
     <>
+      <Helmet>
+        <title> Register </title>
+      </Helmet>
       <div>
         <h1 className="font-bold text-5xl text-center">Register Now!</h1>
         {apiError && (

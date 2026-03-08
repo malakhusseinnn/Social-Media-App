@@ -61,6 +61,9 @@ export default function Login() {
   }
   return (
     <div>
+      <Helmet>
+        <title> Login </title>
+      </Helmet>
       <h1 className="font-bold text-5xl text-center">Login Now!</h1>
       {apiError && (
         <p className="bg-red-900 p-2 my-4 rounded-xl w-[400px] mx-auto text-center text-white font-bold">

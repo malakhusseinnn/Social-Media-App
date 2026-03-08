@@ -102,6 +102,9 @@ export default function Settings() {
 
   return (
     <>
+      <Helmet>
+        <title> Change Password </title>
+      </Helmet>
       <div className="changePasswordCard shadow-2xl w-[70%] mx-auto rounded-2xl p-4">
         <div className="flex gap-3 items-center mb-8">
           <div className="bg-blue-200 rounded-full w-10 h-10 flex justify-center items-center">
